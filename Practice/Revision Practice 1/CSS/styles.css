@@ -1,0 +1,46 @@
+.font{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-variant: small-caps;
+}
+
+.text{
+    text-align:center;
+    text-decoration:underline;
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    text-indent: 40px;
+    text-shadow: 2px 2px black;
+    line-height: 400px;
+}
+
+.bg{
+    font-size: xx-large;
+    background-image: url(PIC.png);
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: none;
+    background-origin: content-box;
+}
+
+.box{
+    padding: 30px 70px 50px 10px;
+    margin: 20px 20px;
+    height:40px;
+    width:40px;
+    background-color: yellow;
+    float:left;
+    clear: right;
+    color: black;
+    outline-color: black;
+    caret-color: blue;
+    opacity: 70%;
+}
+
+
+

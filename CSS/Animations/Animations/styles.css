@@ -1,0 +1,49 @@
+.container{
+    width:100%;
+    background-color: yellow;
+    height: 215px;
+    border:2px solid red
+}
+
+.box{
+    border: 2px solid green;
+    background-color: aqua;
+    height: 212px;
+    width:212px;
+
+    animation-name:ayushmaan;
+    animation-duration: 5s;
+    /* animation-iteration-count: infinite; */
+    animation-iteration-count: 1;
+    animation-timing-function:ease;
+    animation-delay:1s;
+    animation-direction:alternate-reverse;
+    animation-fill-mode: backwards;   
+}
+
+/* @keyframes ayushmaan {
+    from{
+        width: 212px;
+    }
+
+    to{
+        width: 100%;
+    }
+} */
+
+@keyframes ayushmaan {
+    0%{
+        width: 212px;
+        background-color: orange;
+    }
+
+    50%{
+        width:50%;
+        background-color: white;
+    }
+
+    100%{
+        width:100%;
+        background-color: green;
+    }
+}

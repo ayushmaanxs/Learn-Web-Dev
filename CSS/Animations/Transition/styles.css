@@ -1,0 +1,39 @@
+.container{
+    height:500px;
+    width:500px;
+    background-color: green;
+    border:3px solid red;
+    display:flex;
+}
+
+.box{
+    height:150px;
+    width:150px;
+    margin:20px;
+    border:2px solid orangered;
+    background-color: aqua; 
+
+    /* transition: 1s; */
+
+    /* transition-property: all;
+    transition-delay: 5s; */
+
+    /* transition: transform 1s ease 2s; */
+    /* same thing elaborately written below */
+
+    /* transition-property: transform,background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 2s; */
+
+    transition: transform 3s cubic-bezier(0.46, 1.36, 1,-0.26) ;
+    /* transition-property: transform;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0.46, 1.36, 1,-0.26); */
+}
+
+.box:hover{
+    background-color: brown;
+    transform: rotate(45deg);
+    transform: translateX(500px);
+}

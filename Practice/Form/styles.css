@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.heading{
+    color:white;
+    text-align: center;
+    font-size: 90px;
+    margin-bottom: 20px;
+
+}
+#box {
+    border: 1px solid white ;
+    width: 1300px;
+    height: auto;
+    margin: auto;
+    color: white;
+    
+}
+.line{
+    width:1200px;
+}
+.head2{
+    margin-left: 40px;
+    margin-top: 70px;
+    font-size: 60px;
+    margin-bottom: 20px
+}
+.name{
+    margin-left: 40px;
+    width:500px;
+    height:40px;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 40px;
+    outline:3px solid black;
+    color: white
+}
+.name:focus{
+    color:black;
+    outline:3px solid orangered;
+}
+.name-help{
+    margin-left: 45px;
+    font-size: 23px;
+    margin-top: 20px;
+}
+.nameit {
+    display: inline-block;
+}
+#sa {
+    width:1140px;
+    margin-top:10px
+}
+.country{
+    margin-left: 40px;
+    width:700px;
+    height:90px;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 40px;
+    outline:3px solid black;
+    color: gray
+}
+.country:focus{
+    color:black
+}
+.personal{
+    margin-left: 20px;
+    font-size:35px;
+}
+input[type='radio']{
+    width: 25px;
+    height: 25px;
+}
+button{font-size: 2rem;
+    margin: 0px auto;
+    display: block;
+    color: wite;
+    padding: 0.5rem 0.8rem;
+    color: white;
+    background-color: blue;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+}
+    
+
+button:hover {
+        background-color: red;
+    }
