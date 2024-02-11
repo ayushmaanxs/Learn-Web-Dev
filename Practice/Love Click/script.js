@@ -14,15 +14,17 @@ noBtn.addEventListener('mouseover', () => {
     noBtn.style.top = j + 'px';
 });
 
-const changeText = document.querySelector("#change-text");
+// const changeText = document.querySelector("#change-text");
 
-changeText.addEventListener("click", function() {
-  changeText.textContent = "Love you too:)";
-});
+// changeText.addEventListener("click", function() {
+//   changeText.textContent = "Love you too:)";
+// });
 
 function afterr(){
     document.getElementById('Myimage')
     .src="love.jpg";
+    document.getElementById('change-text')
+    .innerHTML="Love you too:)";
 };
 
 const btn = document.getElementById('btn');
