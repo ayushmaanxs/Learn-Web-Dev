@@ -5,10 +5,15 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-*::selection {
-    background: #7d2ae8;
-    color: #fff;
-}
+* {
+    user-select: none;
+  }
+  *::selection {
+    background: none;
+  }
+  *::-moz-selection {
+    background: none;
+  }
 body {
     display: flex;
     justify-content: center;
