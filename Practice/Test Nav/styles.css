@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: rgb(2 4 42);
+}
+.navbar {
+  background-color: rgb(2 4 42);
+  display: flex;
+  color: wheat;
+  justify-content: space-between;
+}
+
+.ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar li {
+  list-style: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar li a {
+  padding: 1rem;
+  text-decoration: none;
+  color: wheat;
+  font-size: 1.4rem;
+}
+
+.navbar li a:hover {
+  background-color: gray;
+  color: black;
+  transition: all 0.4s ease-in;
+}
+.images {
+  background-color: aqua;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.images div img {
+  padding: 0.7rem;
+  width: 27rem;
+}
+
+.images div img:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+  filter: drop-shadow(0 0 10px #333);
+}
+/* @media (max-width: 600px){
+    .images{
+        display: block;
+    }
+    .images div img{
+        width: 25rem;
+        padding: 0.7rem;
+    }
+} */
+
+.footer {
+  color: white;
+}
+.footer i:hover {
+  color: yellowgreen;
+}
+.second-foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listlinks ul {
+  list-style: none;
+  padding-left: 5rem;
+  padding-top: 2rem;
+}
+
+.listlinks li a {
+  text-decoration: none;
+  font-size: larger;
+  color: white;
+  line-height: 2rem;
+}
+.listlinks li a:hover {
+  color: chartreuse;
+  transition: all 0.4s ease-in;
+}
+.sociallinks {
+  padding-right: 5rem;
+  font-size: 2rem;
+}
+.sociallinks i:hover {
+  color: yellow;
+  cursor: pointer;
+  transition: color 0.4s ease-in;
+}
+
+.copyright {
+  font-size: larger;
+  padding-top: 0.4rem;
+  cursor: default;
+  color: chartreuse;
+}
+.copyright {
+  text-align: center;
+}
+.menu {
+  display: none;
+}
+@media (max-width: 480px) {
+  .second-foot {
+    display: block;
+  }
+  .sociallinks {
+    padding-right: 0px;
+  }
+  .listlinks ul {
+    padding-left: 0px;
+  }
+  .listlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .menu {
+    display: flex;
+  }
+  .ul {
+    left: -100%;
+    background-color: #000;
+    position: absolute;
+    top: 39px;
+    width: 100%;
+    display: block;
+    height: 100%;
+    transition: all  ease 1s ;
+  }
+  #checkbox-input:checked+.ul {
+    left: 0%; 
+  }
+}
