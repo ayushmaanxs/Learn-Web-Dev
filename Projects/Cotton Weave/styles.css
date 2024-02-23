@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#wrapper{
+    height: 100%;
+    width:100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 90px;
+    padding-top: 150px;
+}
+
+#left{
+    height: 100%;
+    width: 48%;
+    background-color: red;
+}
+
+#right{
+    height: 100%;
+    width: 48%;
+    background-color: blue;
+}
+
+#left h1{
+    font-size: 120px;
+    font-weight: 800;
+}

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+p{
+    width: fit-content;
+    font-size: larger;
+    position: relative;
+}
+/* p::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+} */
+p::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+}
+
+h1::first-line{
+    color: green;
+}
+
+h2::first-letter{
+    color: blueviolet;
+}
+
+h3::selection{
+    color: burlywood;
+}
