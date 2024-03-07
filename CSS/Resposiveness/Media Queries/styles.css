@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width: 100%;
+    height:100%;
+}
+/* #parent{
+    min-height: 100%;
+    width: 100%;
+    background-color: crimson;
+}
+
+#child1{
+    height: 100vh;
+    width: 60%;
+    background-color: lightblue;
+}
+#child2{
+    height: 100vh;
+    width: 60%;
+    background-color: blueviolet;
+} */
+
+#box{
+    height: 500px;
+    width: 500px;
+    background-color: royalblue;
+}
+
+@media (max-width:700px) {
+    #box{
+        background-color: crimson;
+    }
+}

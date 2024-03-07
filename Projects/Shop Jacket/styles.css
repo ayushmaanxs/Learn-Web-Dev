@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
 }
 
 html,
@@ -25,15 +26,16 @@ html,
 }
 
 #nav h4{
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 #nav i{
     background-color: black;
     color: white;
-    font-size: 20px;
+    font-size: 1.2rem;
     padding: 10px;
     border-radius: 50%;
+    font-weight: 500;
 }
 
 #center{
@@ -42,9 +44,9 @@ html,
 }
 
 #center h1{
-    font-size: 80px;
-    font-weight: 500;
-    line-height: 90px;
+    font-size: 3.4vw;
+    font-weight: 400;
+    line-height: 3.8vw;
 }
 
 #center-in{
@@ -57,9 +59,10 @@ html,
 }
 
 #center-in p{
-    font-size: 22px;
+    font-size: 1.1vw;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 1.5vw;
+
 }
 #right{
     width: 20%;
@@ -100,4 +103,83 @@ html,
     background-image:url(https://images.unsplash.com/photo-1520466809213-7b9a56adcd45?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-position: 0% 48%;
+}
+
+@media (max-width:600px){
+    #nav{
+        height: 60px;
+        gap: 23px;
+        padding: 0 20px;
+    }
+    #nav h4{
+        /* display:none; */
+        font-size: 12px;
+    }
+    #nav i{
+        background-color: black;
+        color: white;
+        font-size: 11px;
+        padding: 7px;
+        border-radius: 50%;
+        font-weight: 500;
+    }
+
+    #center{
+        width: 100%;
+        padding: 15px 20px;
+    }
+    
+    #center h1{
+        font-size: 9.6vw;
+        font-weight: 400;
+        line-height: 9.4vw;
+    }
+    
+    #center-in{
+        height: 200px;
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #center-in p{
+        font-size: 3.3vw;
+        font-weight: 500;
+        line-height: 4vw;
+    
+    }
+    #right{
+        width: 100%;
+    }
+    .elem{
+        padding: 12px 0;
+        border-top: 1.3px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .elem i{
+        font-size: 13px;
+        font-weight: 500;
+        opacity: 1;
+        color: #303030;
+    }
+    .elem a{
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 12px;
+        color: #303030;
+    }
+    
+    #bottom{
+        height: 35%;
+        width: 100%;
+        background-image:url(https://images.unsplash.com/photo-1520466809213-7b9a56adcd45?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: cover;
+        background-position: 0% 48%;
+    }
 }

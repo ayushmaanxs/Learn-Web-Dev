@@ -1,39 +1,233 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Gilroy';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
 }
 
-html , body{
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-#wrapper{
-    height: 100%;
-    width:100%;
-    background-color: white;
-    display: flex;
-    align-items: center;
+#wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: space-between; */
+  padding: 0px 90px;
+  padding-top: 130px;
+  gap: 70px;
+}
+
+#left {
+  height: 100%;
+  width: 45%;
+  /* background-color: red;  */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /*as we have done flex direction column so now the property justify conetent will work on y-axis instead of x-axis as the main and cross axis gets interchanged on changing flex direction*/
+}
+
+#left h1 {
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 90px;
+  font-family: work sans;
+}
+
+#bottom-left {
+  /* height:40%; */
+  width: 100%;
+  margin-top: 80px;
+  /* background-color: yellow; */
+}
+#color {
+  /* background-color: blue; */
+  width: fit-content;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid #000;
+}
+#color h5 {
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+#color1 {
+  height: 20px;
+  width: 20px;
+  background-color: burlywood;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+#color2 {
+  height: 20px;
+  width: 20px;
+  background-color: brown;
+  border-radius: 50%;
+}
+
+#left h2 {
+  margin-top: 30px;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+#left p {
+  font-size: 16px;
+  width: 70%;
+  font-weight: 500;
+  color: #444;
+  line-height: 23px;
+}
+
+#right {
+  height: 90%;
+  width: 33%;
+  /* background-color: blue; */
+  position: relative;
+}
+
+#right-top {
+  height: 80px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+#right-top h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+#right-top h5 {
+  font-size: 16px;
+}
+#right-top h5 i {
+  color: gold;
+}
+
+#right img {
+  width: 100%;
+  height: 88%;
+  object-fit: cover;
+}
+
+#black-gola {
+  position: absolute;
+  height: 140px;
+  width: 140px;
+  background-color: rgb(26, 26, 26);
+  color: #fff;
+  border-radius: 50%;
+  right: -20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 29%;
+}
+#black-gola h5 {
+  font-weight: 500;
+  font-size: 23px;
+}
+
+#rotated {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  rotate: -90deg;
+  transform-origin: 0 0;
+  font-size: 30px;
+  font-weight: 500;
+  left: -10%;
+  bottom: 8%;
+}
+
+@media (max-width: 600px) {
+  #wrapper {
+    flex-direction: column;
     justify-content: space-between;
-    padding: 50px 90px;
-    padding-top: 150px;
-}
+    align-items: flex-start;
+    padding: 0px 50px;
+    padding-top: 40px;
+    gap: 10px;
+  }
 
-#left{
-    height: 100%;
-    width: 48%;
-    background-color: red;
-}
+  #left {
+    height: fit-content;
+    width: 90%;
+    padding-bottom: 50px;
+  }
 
-#right{
-    height: 100%;
-    width: 48%;
-    background-color: blue;
-}
+  #left h1 {
+    font-size: 18.6vw;
+    line-height: 70px;
+  }
 
-#left h1{
-    font-size: 120px;
-    font-weight: 800;
+  #color {
+    width: fit-content;
+    padding: 5px 9px;
+  }
+  #color h5 {
+    font-size: 13px;
+    margin-right: 4px;
+  }
+  #color1 {
+    height: 12px;
+    width: 12px;
+  }
+
+  #color2 {
+    height: 12px;
+    width: 12px;
+  }
+
+  #left h2 {
+    margin-top: 20px;
+    font-size: 2 vw;
+    margin-bottom: 15px;
+  }
+
+  #left p {
+    font-size: 3.2vw;
+    width: 100%;
+    line-height: 20px;
+  }
+
+  #right {
+    align-self: center;
+    height: 90%;
+    width: 70%;
+  }
+
+  #right-top h4 {
+    font-size: 5vw;
+  }
+  #right-top h5 {
+    font-size: 3.5vw;
+  }
+
+  #black-gola {
+    height: 18vw;
+    width: 18vw;
+    top: 40%;
+  }
+  #black-gola h5 {
+    font-size: 3vw;
+  }
+
+  #rotated {
+    font-size: 5vw;
+    left: -14%;
+  }
 }

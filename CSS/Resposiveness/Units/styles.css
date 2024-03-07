@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width: 100%;
+    height:100%;
+}
+
+/* #parent{
+    height: 30vw;
+    width: 30vw;
+    background-color: cyan;
+}
+
+#child{
+    height: 50%;
+    width: 50%;
+    background-color: salmon;
+} */
+
+/* h1{
+    font-size: 200px;
+    font-size: 10vw;    changes will be visible when width of view port will reduce
+    font-size: 10vh;    changes will be visible when height of view port will reduce
+    font-size:10vmax;   size adjustment according to whatever between height and width is larger
+    font-size:10vmin;   size adjustment according to whatever between height and width is smaller
+} */
+
+#parent{
+    background-color: rosybrown;
+    font-size: 50px;
+}
+
+h1{
+    font-size: 1em; /* 1em = size of parent div i.e., 50px*/
+}
+
+h2{
+    font-size: 0.5em; /* 0.5em = half the size of parent div i.e., 25px*/
+}
+h3{
+    font-size: 2em  /* 2em = TWICE the size of parent div i.e,100px*/
+}
