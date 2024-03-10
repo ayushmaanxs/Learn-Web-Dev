@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: black;
+    padding: 5vw;
+}
+
+button{
+    font-size: larger;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid cyan;
+    color: cyan;
+    font-weight: 600;
+    position: relative;
+    transition: all linear 0.5s;
+}
+
+button::after{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: cyan;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all linear 0.5s;
+    z-index: -1;
+}
+
+button:hover::after{
+    width: 100%;
+}
+button:hover{
+    color: black;
+}
