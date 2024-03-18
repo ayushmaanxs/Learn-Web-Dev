@@ -30,18 +30,18 @@ parameters and arguments
 */
 
 function abcd() {
-    console.log("Hello Everyone");
-    console.log("This is");
-    console.log("Ayushmaan");
-    console.log("Shandilya");
-    console.log("on the ground");
-    console.log("Jai shree ram");
+  console.log("Hello Everyone");
+  console.log("This is");
+  console.log("Ayushmaan");
+  console.log("Shandilya");
+  console.log("on the ground");
+  console.log("Jai shree ram");
 }
 abcd();
 abcd();
 
-function add(val){
-    console.log(18+val);
+function add(val) {
+  console.log(18 + val);
 }
 add(40);
 /*
@@ -76,8 +76,8 @@ var ret = ()=>"Ayushmaan";
 //return ka matlab hua , jaha par bhi return lagega uske aage jo bhi likhoge wo jayega jaha par function call hua tha,return functions ke andar hi lgta hai always
 //aisa functiion jo kuch bhi return nhi karta wo bhi UNDEFINED return karta hai
 
-function rtcheck (){
-    return 12;
+function rtcheck() {
+  return 12;
 }
 console.log(rtcheck());
 
