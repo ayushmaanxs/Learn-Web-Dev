@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+/* jab bhi hum locomotive use krate hai toh hum parent div ko koi bhi height or width nhi dete isliye #wrapper ko humne kuch nhi diya*/
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(88,207,209);
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(57,156,174);
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(39,109,209);
+}

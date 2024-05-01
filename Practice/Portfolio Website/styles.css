@@ -201,6 +201,8 @@ a {
 
 .user-image img {
   z-index: -9;
+  width: 345px;
+  height: 390px;
 }
 
 @keyframes ScaleImage {
@@ -708,8 +710,11 @@ footer {
 
 /*Code for responsiveness*/
 @media (max-width: 600px) {
+  .container {
+    width: 90vw;
+    margin: 2%;
+  }
   .navbar {
-    padding-top: 25px;
     justify-content: space-between;
   }
 
@@ -731,10 +736,13 @@ footer {
   }
   .hero-section {
     flex-wrap: wrap;
+    margin:10% 0%;
+    margin-bottom: 0;
+    width: 100%;
+    gap:1rem;
   }
   
   .hero-section-left {
-    /* width:100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -742,7 +750,7 @@ footer {
   }
   
   .hero-section-heading {
-    font-size: 6vw;
+    font-size: 8vw;
   }
   
   .role {
@@ -757,34 +765,46 @@ footer {
   .hero-section-description {
     margin-top: 0.5rem;
     font-weight: 400;
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   
   .btn-pink {
     padding: 0.6rem 1.7rem;
     font-size: 15px;
   }
-   
+
+  .user-image {
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: ScaleImage 5s linear infinite;
+  }
   
   @keyframes ScaleImage {
     0% {
-      transform: scale(0.7);
+      filter: grayscale(0);
+      transform: scale(0.6);
     }
   
     50% {
-      transform: scale(0.8);
+      transform: scale(0.7);
+      filter: grayscale(1);
     }
   
     100% {
-      transform: scale(0.7);
+      filter: grayscale(0);
+      transform: scale(0.6);
     }
   }
   .icon-dots img{
-    transform: scale(0.8);
+    transform: scale(0.3);
   }
   .icon-dots {
-    bottom: 2rem;
+    bottom: 3rem;
     right: 0;
+    right: 6rem;
   }
   
   @keyframes dotsAnimation {
@@ -802,8 +822,12 @@ footer {
   }
   
   .icon-cube {
-    top: 3.5rem;
-    right: 4em;
+    top: 6rem;
+    right: 6rem;
+  }
+  .icon-cube img{
+    width: 40%;
+    height: 20%;
   }
   
   @keyframes cubeRotate {
@@ -812,7 +836,7 @@ footer {
     }
   
     50% {
-      transform: rotateY(180deg) translateY(-24px) ;
+      transform: rotateY(180deg) translateY(10px) ;
     }
   
     100% {
@@ -821,35 +845,35 @@ footer {
   }
   
   .icon-circle {
-    transform: scale(0.8);
-    bottom: 15%;
-    left: 10%;
+    transform: scale(0.6);
+    bottom: 17%;
+    left: 12%;
   }
   
   @keyframes ShakeEffect {
     50% {
-      left: 20%;
-      bottom: 25%;
+      left: 25%;
+      bottom: 20%;
     }
   }
   
   .icon-zigzag {
-    transform: scale(0.7);
-    left: 6%;
-    top: 8%;
+    transform: scale(0.4);
+    left: 15%;
+    top: 12%;
   }
   
   @keyframes zigzagAnimation {
     50% {
-      left: 10%;
-      top: 12%;
+      left: 23%;
+      top: 20%;
     }
   }
   
   .icon-plus {
-    transform: scale(0.7);
+    transform: scale(0.5);
     z-index: 1;
-    top: 7%;
+    top: 14%;
     left: 0.8rem;
     left: 50%;
     animation: ShakeEffectPlus 5s ease-in infinite;
@@ -857,12 +881,12 @@ footer {
   
   @keyframes ShakeEffectPlus {
     50% {
-      top: 14%;
+      top: 20%;
       left: 48%;
     }
   }
   .faded-text {
-    font-size: 2em;
+    font-size: 2rem;
     white-space: nowrap;
     color: rgb(231, 231, 231);
     bottom: -8.6%;

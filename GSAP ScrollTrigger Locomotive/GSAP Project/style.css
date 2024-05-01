@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color:#090909;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 30px;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    gap:50px;
+}
+
+#nav h4{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+#main h1{
+    font-size: 150px;
+    text-transform:uppercase;
+    font-weight: 300;
+    line-height: 120px;
+    /* background-color: red; */
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+    z-index: 9;
+}
+/*CSS ka bug hai ye agar hum h1:nth child 1 likhe toh #nav ko 1st child smjhne lgta hai s that's why 1st actual h1 ke child se deal krne ke liye nth-child(actual+1) karna parega */
+
+#main h1:nth-child(2){  
+    margin-top: 130px;
+}
+
+#main h1:nth-child(3){
+    text-align: center;
+}
+
+#main h1:nth-child(4){
+    text-align: center;
+}
+
+img{
+    height: 370px;
+    position: absolute;
+    top:10%;
+    left:40%;
+}
+#img1{
+    rotate:20deg ;
+}
+#img2{
+    rotate:10deg ;
+}
+#footer{
+    display: flex;
+    /* background-color: yellow; */
+    justify-content: flex-start;
+    align-items: center;
+    gap:40%;
+    position: relative;
+    top: 10%;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+#footer h3{
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    padding:30px;
+}
+textarea{
+    margin-top: 20px;
+    width: 500px;
+    height: 200px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid coral;
+    outline-color: blueviolet;
+    resize: none;
+    padding: 12px;
+}

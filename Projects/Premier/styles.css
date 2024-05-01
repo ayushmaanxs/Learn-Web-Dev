@@ -720,7 +720,7 @@ body {
     height: 5vw;
   }
   #scroll {
-    height: 10vh;
+    height: 24vw;
   }
   #container img {
     height: 18vw;
@@ -729,27 +729,27 @@ body {
     margin-top: 3vw;
   }
   #alphabet {
-    padding-left: 10vw;
-    padding-right: 8vw;
+    /* padding-left: 10vw;
+    padding-right: 8vw; */
     height: fit-content;
     flex-wrap: wrap;
     gap: 0.6vw;
-    padding: 3vw 4vw;
+    padding: 2vh 4vh;
     border-top: 1px solid #000;
     border-bottom:1px solid #000;
   }
   #alphabet h5 {
-    font-size: 2.9vw;
+    font-size: 1.8vh;
     font-weight: 500;
     letter-spacing: 2px;
     border-bottom: 1px solid #000;
-    margin-right: 2.1vw;
+    margin-right: 2vw;
   }
   
   #alphabet h6 {
-    font-size: 1.9vw;
-    padding: 1.3vw 1.4vw;
-    font-weight: 500;
+    font-size: 1.4vh;
+    padding: 1vw 1vw;
+    font-weight:600;
   }
   
   #alphabet h6:hover {
@@ -788,7 +788,7 @@ body {
     width: 20vh;
     height: 60;
     object-position: bottom;
-    margin-left: 40%;
+    margin-left: 43%;
   }
   
   #box {

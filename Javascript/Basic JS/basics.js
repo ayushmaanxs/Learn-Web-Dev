@@ -3,7 +3,10 @@
 
 //CONSOLE
 //console.log
+// line below is used to print anything in the console window
 console.log("Hey this is console log which is used to print");
+let lastName = 48;
+console.log(lastName);
 
 //console.warn
 console.warn("This is a warning");

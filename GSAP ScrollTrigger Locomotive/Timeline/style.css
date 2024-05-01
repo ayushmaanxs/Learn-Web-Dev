@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#box1{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+}
+
+#box2{
+    height: 200px;
+    width: 200px;
+    background-color: royalblue;
+}
+
+#box3{
+    height: 200px;
+    width: 200px;
+    background-color: rosybrown;
+}
