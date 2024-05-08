@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: PPWoodland-Ultralight;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#page1 {
+  height: 100%;
+  width: 100%;
+  background-color: #f7f7ee;
+}
+
+#main-image {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  color: #576144;
+}
+#header {
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+
+#left i {
+  font-size: 50px;
+}
+#right {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+#btn1 {
+  padding-top: 3.6%;
+  text-align: center;
+  /* transform: translateX(-50%); */
+  border: 2px solid #e3e3c4;
+  border-radius: 80px;
+  width: 12vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#btn1:hover {
+  background-color: #e3e3c4;
+  color: #6d7658;
+}
+#btn2 {
+  padding-top: 3.6%;
+  text-align: center;
+  /* transform: translateX(-50%); */
+  border: 2px solid #e3e3c4;
+  border-radius: 80px;
+  width: 12vw;
+  background-color: #556043;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+#image-container img {
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+#main-title {
+  position: absolute;
+  text-align: center;
+  top: 9%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#main-title h1 {
+  font-size: 70px;
+  font-weight: 200;
+}
+#main-title h3 {
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: 200;
+  font-family: PPWoodland-Ultralight;
+}
+
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #556043;
+  padding: 10vw;
+}
+
+#page2 h1 {
+  color: #434b34;
+  font-size: 4.7vw;
+  text-align: center;
+  font-weight: 500;
+}
+#page3{
+  height: 100vh;
+  width:100%;
+}

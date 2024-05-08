@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    position: fixed;
+    z-index: 99;
+}
+
+#nav-part1 {
+
+    width: 40px;
+    /* background-color: yellow; */
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: #434B34;
+    margin-bottom: 4px;
+    border-radius: 3px;
+}
+
+#nav-part2 button {
+    padding: 7px 18px;
+    border-radius: 50px;
+    border: 1px solid #434B34;
+    margin-right: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #434B34;
+    background-color: transparent;
+}
+
+#nav-part2 button:nth-last-child(1) {
+    background-color: #434B34;
+    color: #fff;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: red; */
+}
+
+#page1 svg {
+    position: absolute;
+    scale: 0.2;
+    top: -15%;
+    fill: #434B34;
+    z-index: 99;
+}
+
+#page1 img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+#page2 {
+    min-height: 150vh;
+    width: 100%;
+    background-color: #5B6647;
+    position: relative;
+}
+
+#page2 #svg1 {
+    width: 100%;
+    position: absolute;
+}
+
+#text-container {
+    position: relative;
+    z-index: 9;
+    padding-top: 10vw;
+}
+
+#text-container h2 {
+    text-align: center;
+    font-size: 4.3vw;
+    line-height: 4.6vw;
+    font-family: PP woodland;
+    /* color: #E3E3C4; */
+    color: #434B34;
+
+    font-weight: 100;
+}
+
+#text-container h3 {
+    text-align: center;
+    font-size: 4.3vw;
+    line-height: 4.6vw;
+    font-family: PP woodland;
+    /* color: #E3E3C4; */
+    color: #434B34;
+
+    font-weight: 100;
+}
+
+#text-container h2 span {
+    font-family: pp woodland;
+}
+
+#page2 #svg2 {
+    position: absolute;
+    bottom: -10%;
+    width: 250vw;
+    fill: #5B6647;
+    z-index: 9;
+}
+
+#page2 #svg3 {
+    position: absolute;
+    bottom: -10%;
+    width: 250vw;
+    transform: translateX(-7%);
+    fill: #E3E3C4;
+}
+
+
+#page3 {
+    min-height: 100vh;
+    padding: 13vw 5vw;
+    background-color: #F7F7EE;
+}
+
+#page3 .elem {
+    height: 200px;
+    width: 100%;
+    border: 1px solid #5B6647;
+    /* background-color: red; */
+    border-top: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+#page3 .elem:nth-child(1) {
+    border-top: 1px solid #5B6647;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#page3 .elem:nth-last-child(1) {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.elem-part1 {
+    height: 100%;
+    width: 22%;
+
+    position: absolute;
+    transition: all ease-out 0.4s;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.elem-part1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.elem-part2 {
+    height: 100%;
+    width: 100%;
+    transition: all ease-out 0.4s;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #434B34;
+    padding: 2.6vw 4vw;
+}
+
+.elex-1 h3 {
+    margin-bottom: 1vw;
+    font-family: pp woodland;
+    font-size: 2.4vw;
+    font-weight: 100;
+}
+
+.elex-1 p {
+    font-size: 0.8vw;
+}
+
+.elex-2 h5 {
+    background-color: #5B6647;
+    color: #E3E3C4;
+    padding: 4px 18px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9vw;
+    transition: all ease-out 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.elex-2 h5 i {
+    position: absolute;
+    background-color: #E3E3C4;
+    color: #5B6647;
+    padding: 5px 18px;
+    left: 0;
+    opacity: 0;
+    top: 0;
+}
+
+.elem:hover .elem-part2 {
+    width: 78%;
+    background-color: #5B6647;
+    color: #E3E3C4;
+}
+
+.elem:hover .elem-part1 {
+    transform: translateX(0);
+}
+
+.elem:hover .elex-2 h5 {
+    background-color: #E3E3C4;
+    color: #5B6647;
+}
+
+.elem:hover .elex-2 h5 i {
+    opacity: 1;
+}
+
+
+#page4 {
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+    /* background-color: red; */
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transform: scale(0.6) translateX(-350px) translateY(188px);
+}
+
+.swiper-slide {
+    width: 75%;
+}
+
+.swiper-slide:nth-child(4n) {
+    width: 20%;
+}
+
+.swiper-button-next {
+    color: #fff;
+    background-color: #5B6647;
+    height: 20px;
+    font-size: 14px;
+    padding: 0 20px;
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+.swiper-button-next::after {
+    content: "";
+}
+
+.swiper-button-prev {
+    color: #fff;
+    background-color: #5B6647;
+    height: 20px;
+    font-size: 14px;
+    padding: 0 20px;
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    left: 85%;
+}
+
+.swiper-button-prev::after {
+    content: "";
+}
+
+.swiper-slide-active img {
+    transform: scale(1) translateX(0);
+
+}
+
+.swiper-pagination {
+    top: 7.5%;
+    left: 87.5%;
+    font-size: 10px;
+    color: #5B6647;
+    font-weight: 600;
+    /* background-color: red; */
+    height: 3%;
+    width: 5%;
+}
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 5vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page5-left{
+    height: 100%;
+    width: 35%;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/230/ALH_Odisej_outsidepool_01-scaled-480x0.jpg);
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+#page5-center{
+    height: 100%;
+    width: 30%;
+    border-radius: 20px;
+    padding: 5vw 5vw;
+    text-align: center;
+}
+#page5-center h1{
+    font-size: 4vw;
+    text-align: center;
+    line-height: 4vw;
+    font-weight: 100;
+    color: #434B34;
+    font-family: PP woodland;
+    margin-bottom: 5vw;
+}
+#page5-center p{
+    font-size: 1vw;
+    text-align: center;
+    
+    font-weight: 500;
+
+  
+}
+#page5-right{
+    height: 100%;
+    width: 35%;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/388/alh-img-2-480x0.jpeg);
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+
+}
