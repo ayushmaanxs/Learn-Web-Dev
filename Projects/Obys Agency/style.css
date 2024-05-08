@@ -32,6 +32,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #151515;
+  font-family: "Plain Light";
   overflow-x: hidden;
   /* cursor: none; */
 }
