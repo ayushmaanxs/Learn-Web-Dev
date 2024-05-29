@@ -1,0 +1,85 @@
+@font-face {
+  font-family: matterLight;
+  src: url(Fonts/matter-light.ttf);
+}
+
+@font-face {
+  font-family: matterRegular;
+  src: url(Fonts/matter-regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(Fonts/pxiEyp8kv8JHgFVrJJfecg.ttf);
+}
+
+@font-face {
+  font-family: robotoFlex;
+  src: url(Fonts/roboto-flex-variable-full.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: matterRegular;
+  overflow-x: hidden;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#container{
+    height: 100%;
+    width: 100vw;
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.7vh 7vh;
+    /* background-color: olive; */
+}
+header h2{
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+#nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:3vh;
+}
+#nav-right h3{
+    font-family: matterLight;
+    font-weight: 100;
+    font-size: 1.4rem;
+}
+
+#nav-right i{
+    font-size: 1.5rem;
+}
+
+#hero-section{
+    padding: 5vh 20vh;
+    width: 100%;
+}
+#second-line{
+    display: flex;
+    gap: 20px;
+}
+#hero-section video{
+    width: 25vh;
+    height: 18vh;
+    border-radius:20vh ;
+    object-fit: cover;
+}
+
+#hero-section h1{
+    font-size: 7rem;
+    font-weight: 200;
+    font-family: matterLight;
+}
