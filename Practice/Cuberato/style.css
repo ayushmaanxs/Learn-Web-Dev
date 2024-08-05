@@ -80,6 +80,12 @@ header h2{
 
 #hero-section h1{
     font-size: 7rem;
-    font-weight: 200;
+    font-weight: 550;
     font-family: matterLight;
+}
+.design-text{
+    font-size: 7.3rem;
+    font-weight: 100;
+    font-family: matterLight;
+    font-style: italic;
 }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDesktop - Web app to desktop app in minutes</title>
+    <link rel="shortcut icon" href="https://www.todesktop.com/favicon.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="p-3 flex bg-white justify-between items-center top-0 left-0 right-0 z-20 shadow-md">
+      <a href="#" id="brand" class="flex gap-2 items-center flex-1">
+        <img
+          class="object-cover max-w-12 max-h-12"
+          src="./assets/asset 0.png"
+          alt="logo"
+        />
+        <span class="text-lg font-medium font-display">ToDesktop</span>
+      </a>
+      <div id="nav-menu" class="hidden lg:flex gap-12">
+        <a href="#" class="font-medium hover:text-primary">Pricing</a>
+        <a href="#" class="font-medium hover:text-primary">Docs</a>
+        <a href="#" class="font-medium hover:text-primary">Changelog</a>
+        <a href="#" class="font-medium hover:text-primary">Blogs</a>
+        <a href="#" class="font-medium hover:text-primary">Login</a>
+      </div>
+      <div class="hidden lg:flex flex-1 justify-end">
+        <button
+          class="flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600"
+        >
+          <img src="./assets/asset 1.svg" alt="" />
+          <span class="font-display font-medium">Electron Developers</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <button class="p-2 lg:hidden" onclick="handleMenu()">
+        <i class="fa-solid fa-bars text-gray-600"></i>
+      </button>
+
+      <div id="nav-dialouge" class="hidden z-10 fixed md:hidden bg-white inset-0 p-3">
+        <div id="nav-bar" class="flex justify-between">
+          <a href="#" id="brand" class="flex gap-2 items-center">
+            <img
+              class="object-cover max-w-12 max-h-12"
+              src="./assets/asset 0.png"
+              alt="logo"
+            />
+            <span class="text-lg font-medium font-display">ToDesktop</span>
+          </a>
+          <button class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-xmark text-gray-600"></i>
+          </button>
+        </div>
+        <div class="mt-6">
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Docs</a
+          >
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Changelog</a
+          >
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Blogs</a
+          >
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Login</a
+          >
+        </div>
+
+        <div class="h-[1px] bg-gray-300"></div>
+        <button
+          class="mt-6 w-full flex gap-2 items-center px-6 py-4 rounded-lg hover:bg-gray-50"
+        >
+          <img src="./assets/asset 1.svg" alt="" />
+          <span>Electron Developers</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MAIN SECTION -->
+    <main>
+      <!-- Hero Section -->
+      <div id="hero" class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
+        <div id="hero-container" class="max-w-4xl mx-auto px-6 py-32 pt-6 flex flex-col sm:items-center sm:text-center">
+          <div id="version-text" class="flex items-center my-6 gap-2 border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition group">
+            <div class="w-2 h-2 bg-yellow-400 rounded-full border border-yellow-600"></div>
+            <p class="font-display font-medium text-yellow-600 ">v0.22.0: <span class="text-yellow-800">Electron 30, Chromium 124</span></p>
+            <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
+          </div>
+          <h1 class="text-4xl font-display font-semibold leading-snug mt-4 text-black sm:text-6xl sm:leading-normal">Web app to desktop app in minutes</h1>
+          <p class="text-xl mt-4 sm:text-2xl sm:mt-8 text-gray-800 ">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
+          <div id="buttons-container" class="mt-12 gap-4 flex flex-col sm:flex-row">
+            <button class="px-8 py-3 font-semibold rounded-lg text-white bg-primary shadow-sm hover:bg-opacity-90">Download now</button>
+            <button class="px-8 py-3 font-semibold rounded-lg bg-white border border-gray-400 hover:border-gray-800">Read Docs</button>
+          </div> 
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

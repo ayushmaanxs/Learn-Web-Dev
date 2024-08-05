@@ -1,0 +1,8 @@
+Khaatabook
+Har roz ki ek file create kr skte ho and us file ka name date se hoga like 05-08-2024.txt
+
+app mein screen par / route pe aap dekh payenge sari files and saare din ka hisaab
+
+kisi hisab pe click krne pe us din ka hisab khul jayega
+chahe toh edit kare and firse save karein
+hisab ko delete kiya jaa skta hai

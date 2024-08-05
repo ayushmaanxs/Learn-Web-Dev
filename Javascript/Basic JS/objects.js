@@ -31,9 +31,9 @@ var battery = {
   isWorking: "true",
 };
 
-battery.for; // dot means we have gone isnide object
+battery.for; // dot means we have gone inside object
 // console.log(battery.for);
-// console.log(obj.email);
+// console.log(obj.email);-
 // console.log(battery.isWorking);
 // console.log(obj);
 // console.log(battery);
