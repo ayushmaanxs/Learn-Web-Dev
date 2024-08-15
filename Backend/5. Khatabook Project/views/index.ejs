@@ -1,37 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Khaatabook</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-</head>
-<body>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="p-10 flex justify-between content-baseline">
-        <h1 class="font-sans font-bold text-4xl">Khaatabook</h1>
-        <div class="hidden md:flex gap-8 font-semibold font-sans px-4 py-2">
-            <h3 class="hover:cursor-pointer hover:text-indigo-600 transition-all">Home</h3>
-            <h3 class="hover:cursor-pointer hover:text-indigo-600 transition-all">Create New Hisab</h3>
-        </div>
+      <h1 class="font-sans font-bold text-4xl">Khaatabook</h1>
+      <div class="hidden md:flex gap-8 font-semibold font-sans px-4 py-2">
+        <h3 class="hover:cursor-pointer hover:text-indigo-600 transition-all" onclick="location.href='/'">
+          Home
+        </h3>
+        <h3 class="hover:cursor-pointer hover:text-indigo-600 transition-all" onclick="location.href='./create'">
+          Create New Hisab
+        </h3>
+      </div>
     </div>
 
     <h1 class="px-10 text-2xl font-semibold font-sans">All Hisaab Kitaab</h1>
 
-    <div id="main" class="flex m-10 p-2 gap-8 bg-blue-600 rounded sm:w-5/6 md:w-2/5 lg:w-1/4 justify-between px-5 text-white">
+    <!-- files array se har bar ek ek file aa rha hai forEach loop ke karan -->
+
+    <% if(files.length > 0) { %>
+      <% files.forEach(function(file) { %>
+      <div
+        id="main"
+        class="flex m-10 p-2 gap-8 bg-blue-600 rounded sm:w-5/6 md:w-2/5 lg:w-1/4 justify-between px-5 text-white"
+      >
         <div id="left" class="flex gap-4">
-            <h3 id ="date" class="font-semibold font-sans">12-08-2024</h3>
-            <i class="ri-arrow-right-line font-sans bg-white text-indigo-600 px-1 rounded-full" id="view-hisaab"></i>
+          <h3 id="date" class="font-semibold font-sans"><%= file.split(".")[0] %></h3>
+          <i
+            class="ri-arrow-right-line font-sans bg-white text-indigo-600 px-1 rounded-full"
+            id="view-hisaab"
+            onclick="location.href='./hisaab/<%= file %>'"
+          ></i>
         </div>
 
         <div id="right" class="flex gap-4">
-            <i class="ri-pencil-line font-medium font-sans" id ="edit-hisaab"></i>
-            <i class="ri-delete-bin-6-line font-medium font-sans bg-white text-black px-1 rounded-full" id = "delete-hisaab"></i>
+          <i
+            class="ri-pencil-line font-medium font-sans"
+            id="edit-hisaab"
+            onclick="location.href='./edit/<%= file %>'"
+          ></i>
+          <i
+            class="ri-delete-bin-6-line font-medium font-sans bg-white text-black px-1 rounded-full"
+            id="delete-hisaab"
+            onclick="location.href='./delete/<%= file %>'"
+          ></i>
         </div>
-    </div>
-
-</body>
+      </div>
+      <% }) %>
+    <% } else { %>
+      <h3 class=" px-10 py-5 text-zinc-500">No Hisaab Found! Create hisaab to see something</h3>
+    <% } %>
+  </body>
 </html>
