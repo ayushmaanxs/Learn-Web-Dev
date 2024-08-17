@@ -3,14 +3,16 @@ const express = require('express');
 const router = express.Router();
 
 //Import Controller
-const {postController} = require("../controllers/postController");
-const {likeController} = require("../controllers/likeController");
-const {commentController} = require("../controllers/commentController");
+const {createPost,getAllPosts} = require("../controllers/postController");
+const {likePost,unLikePost} = require("../controllers/likeController");
+const {createComment} = require("../controllers/commentController");
 
 //Creating Mapping
-router.post("/post",postController);
-router.post("/like",likeController);
-router.post("/comment",commentController);
+router.post("/post/create",createPost);
+router.post("/like/post",likePost);
+router.post("/comment/create",createComment);
+router.get("/posts",getAllPosts);
+router.post("/unlike/post",unLikePost);
 
 //Export
 module.exports = router;

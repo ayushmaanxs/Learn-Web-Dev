@@ -8,14 +8,16 @@ const mongoose = require('mongoose');
 //Route Handler
 const likeSchema = new mongoose.Schema({
     post:{ 
-        type:mongoose.Schema.Types.ObjectId,    
-        ref:"Post",
+        type:mongoose.Schema.Types.ObjectId,    // post apne ap me ek model hai so hum usko refer krenge
+        ref:"Post", // isi name se export kara hoga post ka model
     },
     user:{
         type: String,
-        require: true,
+        required: true,
     },
 });
 
 //Export
 module.exports=mongoose.model("like",likeSchema);
+
+// likeSchema ko `like` name se export kar diya
